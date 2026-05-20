@@ -2,7 +2,6 @@
 
 Trabalho 2 - Redes Neurais Artificiais  
 Disciplina: Inteligência Artificial  
-Curso: Engenharia de Computação - UNISC  
 Professores: Profa. Daniela Bagatini e Prof. João Carlos Furtado  
 
 ---
