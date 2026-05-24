@@ -11,7 +11,9 @@ public class DataLoader {
     protected String path = "C:\\Users\\Dell\\Desktop\\rna-teen-mental-health\\data\\Teen_Mental_Health_Dataset.csv";
     protected String headers[];
 
-    //Construtor vazio para não sobreescrever o valor inicial do path
+    /**
+     * Construtor vazio para não sobreescrever o valor inicial do path
+     */
     public DataLoader(){
     }
 
@@ -19,16 +21,22 @@ public class DataLoader {
 
         List<String[]> linhas = new ArrayList<>();
 
-        //Usar Try-With-Resources
+        /**
+         * Usar Try-With-Resources
+         */
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
-            //Faz essa primeira validaçao na entrada do arquivo para não dar NullPointerException
+            /**
+             * Faz essa primeira validaçao na entrada do arquivo para não dar NullPointerException
+             */
             String headerLine = br.readLine();
             if(headerLine != null){
                 headers = headerLine.split(",");
             }
 
-            //Faz a validaçao de linha a linha
+            /**
+             * Faz a validaçao de linha a linha
+             */
             String line;
             while((line = br.readLine()) != null){
                 if(!line.trim().isEmpty()){
@@ -37,9 +45,15 @@ public class DataLoader {
             }
 
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Error: " + e.getMessage());
         }
 
         return linhas;
     }
+
+    /*
+    public String[] getHeaders(){
+        return headers;
+    }
+    */
 }
