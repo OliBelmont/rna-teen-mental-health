@@ -20,7 +20,7 @@ public class DataProcessor {
 
 
     /**
-     * Pega um número qualquer do dataset, o mínimo da coluna e o máximo e aplica
+     * Pega um  número qualquer do dataset, o mínimo da coluna e o máximo e aplica
      * uma fórmula
      * Exemplo, se a idade varia entre 12 a 19 e a idade analisada seria 15
      * a conta ficaria
