@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataLoader {
-    protected String path = "/home/imply/Meus arquivos/rna-teen-mental-health/data/Teen_Mental_Health_Dataset.csv";
+    protected String path = "data/treino.csv";
     protected String headers[];
 
     /**

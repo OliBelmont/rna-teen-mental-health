@@ -61,7 +61,7 @@ public class RedeNeural {
             // Oversampling: se tiver depressão, adiciona mais vezes
             // Isso faz a rede "prestar mais atenção" nos casos positivos
             if (y[i] == 1.0) {
-                for (int k = 0; k < 10; k++) {
+                for (int k = 0; k < config.getOversamplingFactor(); k++) {
                     ds.Add(new DataSetObject(X[i], saida));
                 }
             }
