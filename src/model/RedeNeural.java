@@ -138,8 +138,6 @@ public class RedeNeural {
         System.out.printf("  VN - acertou sem depressão : %d%n", tn);
         System.out.printf("  FP - falso alarme          : %d%n", fp);
         System.out.printf("  FN - perdeu caso real      : %d%n", fn);
-<<<<<<< HEAD
-=======
         ResultadoCSV.salvar(
             config,
             acuracia,
@@ -153,6 +151,5 @@ public class RedeNeural {
         );
 
 System.out.println("\nResultado salvo em results/resultados.csv");
->>>>>>> origin/branch_klinsmann
     }
 }
