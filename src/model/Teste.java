@@ -133,6 +133,19 @@ int total = hidden.length * lr.length * maxIter.length * thresholds.length * ove
 
                     double f1 = calcularF1(rede, Xteste, yteste);
                     System.out.printf("F1-Score: %.2f%%%n", f1 * 100);
+<<<<<<< HEAD
+=======
+                    BenchmarkCSV.salvar(
+                        h,
+                        l,
+                        m,
+                        t,
+                        o,
+                        f1
+                    );
+
+                    System.out.println("Resultado salvo no benchmark.csv");
+>>>>>>> origin/branch_klinsmann
 
                     if (f1 > melhorF1) {
                         melhorF1           = f1;
